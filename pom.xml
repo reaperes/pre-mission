@@ -8,4 +8,21 @@
   <artifactId>pre-mission</artifactId>
   <version>0.1-SNAPSHOT</version>
 
+  <properties>
+    <tomcat.version>8.0.15</tomcat.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.tomcat.embed</groupId>
+      <artifactId>tomcat-embed-core</artifactId>
+      <version>${tomcat.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.tomcat.embed</groupId>
+      <artifactId>tomcat-embed-logging-juli</artifactId>
+      <version>${tomcat.version}</version>
+    </dependency>
+  </dependencies>
+
 </project>
