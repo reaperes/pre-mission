@@ -1,0 +1,72 @@
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+body {
+  line-height: normal;
+}
+
+#logoContainer {
+  background-color: #91AA9D;
+  text-align: center;
+}
+
+#logoContainer img {
+  margin: 20px auto;
+}
+
+#recent-container {
+  background-color: #D1DBBD;
+  width: 180px;
+  margin: 20px 20px;
+  float: left;
+}
+
+#recent-container-title {
+  margin-top: 6px;
+  text-align: center;
+}
+
+#recent-post-container {
+  list-style-position: inside;
+  padding: 10px 0 10px 20px;
+}
+
+.recent-post-title {
+  margin-bottom: 6px;
+}
+
+#post-container {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+.post {
+  background-color: #FCFFF5;
+  margin-bottom: 20px;
+}
+
+.post-meta-container {
+  margin-bottom: 4px;
+}
+
+.post-author {
+  float: left;
+  margin-right: 10px;
+}
+
+.post-register-date {
+  font-size: 18px;
+}

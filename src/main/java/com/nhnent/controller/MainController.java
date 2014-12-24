@@ -8,8 +8,9 @@ import java.util.Date;
 import java.util.Map;
 
 @Controller
+@RequestMapping("/")
 public class MainController {
-    @RequestMapping("/")
+    @RequestMapping(method = RequestMethod.GET)
     public String hello(Map<String, Object> model) {
         model.put("time", new Date());
         model.put("message", "Hello, world");
