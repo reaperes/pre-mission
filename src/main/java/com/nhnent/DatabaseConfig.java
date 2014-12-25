@@ -14,7 +14,7 @@ import javax.sql.DataSource;
 public class DatabaseConfig {
     @Bean
     public DataSource dataSource() {
-        return new PooledDataSource("com.apache.ibatis.datasource.pooled.PooledDataSource",
+        return new PooledDataSource("com.mysql.jdbc.Driver",
                 "jdbc:mysql://localhost:3306/PreMission", "next", "next!!@@##$$");
     }
 

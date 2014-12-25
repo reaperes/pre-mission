@@ -15,6 +15,14 @@
 <aside id="recent-container">
   <h2 id="recent-container-title">Recent post</h2>
   <ol id="recent-post-container">
+    <%--@elvariable id="posts" type="java.util.List"--%>
+    <c:forEach var="post" items="${posts}">
+      <li>
+        <h3 class="recent-post-title">
+          ${post.id}
+        </h3>
+      </li>
+    </c:forEach>
     <li><h3 class="recent-post-title">Recent post 1</h3></li>
     <li><h3 class="recent-post-title">Recent post 2</h3></li>
     <li><h3 class="recent-post-title">Recent post 3</h3></li>
