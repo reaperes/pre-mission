@@ -15,96 +15,27 @@
 <aside id="recent-container">
   <h2 id="recent-container-title">Recent post</h2>
   <ol id="recent-post-container">
-    <%--@elvariable id="posts" type="java.util.List"--%>
-    <c:forEach var="post" items="${posts}">
+    <%--@elvariable id="recentSummaries" type="java.util.List"--%>
+    <c:forEach var="summary" items="${recentSummaries}">
       <li>
         <h3 class="recent-post-title">
-          ${post.id}
+          ${summary}
         </h3>
       </li>
     </c:forEach>
-    <li><h3 class="recent-post-title">Recent post 1</h3></li>
-    <li><h3 class="recent-post-title">Recent post 2</h3></li>
-    <li><h3 class="recent-post-title">Recent post 3</h3></li>
-    <li><h3 class="recent-post-title">Recent post 4</h3></li>
-    <li><h3 class="recent-post-title">Recent post 5</h3></li>
-    <li><h3 class="recent-post-title">Recent post 6</h3></li>
-    <li><h3 class="recent-post-title">Recent post 7</h3></li>
   </ol>
 </aside>
 <main id="post-container">
-  <article class="post">
-    <h1 class="post-Title">Title</h1>
-    <div class="post-meta-container">
-      <h4 class="post-author">Author</h4>
-      <time class="post-register-date">December 5, 2013</time>
-    </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non commodo libero. Ut mattis justo ac massa
-      blandit blandit. Maecenas tincidunt ac orci vitae dapibus. Sed blandit luctus enim a bibendum. Duis eu
-      bibendum nulla, in iaculis odio. Sed nisi nisi, rhoncus sed tempor eget, mollis vel magna. Etiam vel massa
-      sagittis, dapibus nisi nec, pulvinar est. Morbi lacinia a quam ut consequat. Pellentesque orci nisi, tempor
-      sit amet ipsum eget, consequat cursus leo. Duis placerat congue arcu, quis imperdiet metus.</p>
-  </article>
-  <article class="post">
-    <h1 class="post-Title">Title</h1>
-    <div class="post-meta-container">
-      <h4 class="post-author">Author</h4>
-      <time class="post-register-date">December 5, 2013</time>
-    </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non commodo libero. Ut mattis justo ac massa
-      blandit blandit. Maecenas tincidunt ac orci vitae dapibus. Sed blandit luctus enim a bibendum. Duis eu
-      bibendum nulla, in iaculis odio. Sed nisi nisi, rhoncus sed tempor eget, mollis vel magna. Etiam vel massa
-      sagittis, dapibus nisi nec, pulvinar est. Morbi lacinia a quam ut consequat. Pellentesque orci nisi, tempor
-      sit amet ipsum eget, consequat cursus leo. Duis placerat congue arcu, quis imperdiet metus.</p>
-  </article>
-  <article class="post">
-    <h1 class="post-Title">Title</h1>
-    <div class="post-meta-container">
-      <h4 class="post-author">Author</h4>
-      <time class="post-register-date">December 5, 2013</time>
-    </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non commodo libero. Ut mattis justo ac massa
-      blandit blandit. Maecenas tincidunt ac orci vitae dapibus. Sed blandit luctus enim a bibendum. Duis eu
-      bibendum nulla, in iaculis odio. Sed nisi nisi, rhoncus sed tempor eget, mollis vel magna. Etiam vel massa
-      sagittis, dapibus nisi nec, pulvinar est. Morbi lacinia a quam ut consequat. Pellentesque orci nisi, tempor
-      sit amet ipsum eget, consequat cursus leo. Duis placerat congue arcu, quis imperdiet metus.</p>
-  </article>
-  <article class="post">
-    <h1 class="post-Title">Title</h1>
-    <div class="post-meta-container">
-      <h4 class="post-author">Author</h4>
-      <time class="post-register-date">December 5, 2013</time>
-    </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non commodo libero. Ut mattis justo ac massa
-      blandit blandit. Maecenas tincidunt ac orci vitae dapibus. Sed blandit luctus enim a bibendum. Duis eu
-      bibendum nulla, in iaculis odio. Sed nisi nisi, rhoncus sed tempor eget, mollis vel magna. Etiam vel massa
-      sagittis, dapibus nisi nec, pulvinar est. Morbi lacinia a quam ut consequat. Pellentesque orci nisi, tempor
-      sit amet ipsum eget, consequat cursus leo. Duis placerat congue arcu, quis imperdiet metus.</p>
-  </article>
-  <article class="post">
-    <h1 class="post-Title">Title</h1>
-    <div class="post-meta-container">
-      <h4 class="post-author">Author</h4>
-      <time class="post-register-date">December 5, 2013</time>
-    </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non commodo libero. Ut mattis justo ac massa
-      blandit blandit. Maecenas tincidunt ac orci vitae dapibus. Sed blandit luctus enim a bibendum. Duis eu
-      bibendum nulla, in iaculis odio. Sed nisi nisi, rhoncus sed tempor eget, mollis vel magna. Etiam vel massa
-      sagittis, dapibus nisi nec, pulvinar est. Morbi lacinia a quam ut consequat. Pellentesque orci nisi, tempor
-      sit amet ipsum eget, consequat cursus leo. Duis placerat congue arcu, quis imperdiet metus.</p>
-  </article>
-  <article class="post">
-    <h1 class="post-Title">Title</h1>
-    <div class="post-meta-container">
-      <h4 class="post-author">Author</h4>
-      <time class="post-register-date">December 5, 2013</time>
-    </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non commodo libero. Ut mattis justo ac massa
-      blandit blandit. Maecenas tincidunt ac orci vitae dapibus. Sed blandit luctus enim a bibendum. Duis eu
-      bibendum nulla, in iaculis odio. Sed nisi nisi, rhoncus sed tempor eget, mollis vel magna. Etiam vel massa
-      sagittis, dapibus nisi nec, pulvinar est. Morbi lacinia a quam ut consequat. Pellentesque orci nisi, tempor
-      sit amet ipsum eget, consequat cursus leo. Duis placerat congue arcu, quis imperdiet metus.</p>
-  </article>
+  <%--@elvariable id="posts" type="java.util.List"--%>
+  <c:forEach var="post" items="${posts}">
+    <article class="post">
+      <div class="post-meta-container">
+        <h4 class="post-author">${post.email}</h4>
+        <time class="post-register-date">${post.beautifulDate}</time>
+      </div>
+      <p>${post.content}</p>
+    </article>
+  </c:forEach>
 </main>
 </body>
 </html>

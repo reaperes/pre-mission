@@ -7,6 +7,7 @@ public class Post {
     private String email;
     private String password;
     private String content;
+    private String beautifulDate;
     private Date registeredDate;
     private Date modifiedDate;
 
@@ -56,5 +57,13 @@ public class Post {
 
     public void setModifiedDate(Date modifiedDate) {
         this.modifiedDate = modifiedDate;
+    }
+
+    public String getBeautifulDate() {
+        return beautifulDate;
+    }
+
+    public void setBeautifulDate(String beautifulDate) {
+        this.beautifulDate = beautifulDate;
     }
 }
