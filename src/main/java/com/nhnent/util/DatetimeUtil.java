@@ -31,7 +31,7 @@ public class DatetimeUtil {
     }
 
     /**
-     * Beautifuler mysql datetime
+     * Beautify mysql datetime
      * @param datetime datetime format ex. Wed Dec 24 10:59:26 KST 2014
      * @return ex. December 24, 10:59:26
      */
