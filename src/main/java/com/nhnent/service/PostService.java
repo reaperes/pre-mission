@@ -17,7 +17,7 @@ public class PostService {
     public List<Post> getAllPosts() {
         List<Post> posts = postMapper.getAllPosts();
         for (Post post : posts)
-            post.setBeautifulDate(DatetimeUtil.beautifuler(post.getRegisteredDate().toString()));
+            post.setBeautifulDate(DatetimeUtil.beautify(post.getRegisteredDate().toString()));
         return posts;
     }
 
