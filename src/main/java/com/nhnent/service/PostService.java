@@ -21,6 +21,10 @@ public class PostService {
         return posts;
     }
 
+    public void insertPost(Post post) {
+        postMapper.insert(post);
+    }
+
     public String summarize(Post post, int length) {
         String content = post.getContent();
         if (content.length() <= length)

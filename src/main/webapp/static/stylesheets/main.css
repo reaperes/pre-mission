@@ -49,6 +49,10 @@ body {
   padding: 20px;
 }
 
+#post-new-form {
+  margin-bottom: 20px;
+}
+
 .post {
   background-color: #FCFFF5;
   margin-bottom: 20px;

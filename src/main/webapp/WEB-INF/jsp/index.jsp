@@ -26,13 +26,12 @@
   </ol>
 </aside>
 <main id="post-container">
-  <form id="post-new-form" onsubmit="return onSubmitForm();">
-    <label>Email: <input type="email" name="author" title="ttttttttile"/></label>
-    <label>Passowrd: <input type="password" name="password" title="ppppppassword"/></label><br/>
-    <label><textarea name="content" title="tttttext" rows="4" cols="100"></textarea><br/></label>
+  <form id="post-new-form">
+    <label>Email: <input type="email" name="email"></label>
+    <label>Password: <input type="password" name="password"></label><br/>
+    <label><textarea name="content" rows="4" cols="100"></textarea><br/></label>
     <input type="submit" value="Submit"/>
   </form>
-  <br/>
   <%--@elvariable id="posts" type="java.util.List"--%>
   <c:forEach var="post" items="${posts}">
     <article class="post">
@@ -44,6 +43,8 @@
     </article>
   </c:forEach>
 </main>
+<script type="text/javascript" src="../../static/javascripts/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="../../static/javascripts/jquery-extend.js"></script>
 <script type="text/javascript" src="../../static/javascripts/main.js"></script>
 </body>
 </html>

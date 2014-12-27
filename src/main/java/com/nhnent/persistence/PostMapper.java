@@ -1,6 +1,7 @@
 package com.nhnent.persistence;
 
 import com.nhnent.domain.Post;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
@@ -19,4 +20,8 @@ public interface PostMapper {
             @Result(column="modified_date", property="modifiedDate")
     })
     public List<Post> getAllPosts();
+
+    @Insert("INSERT INTO Post(author_email, author_password, content, registered_date)" +
+            "VALUES(#{email}, PASSWORD(#{password}), #{content}, #{registeredDate})")
+    public void insert(Post post);
 }

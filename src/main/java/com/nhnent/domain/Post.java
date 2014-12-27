@@ -11,6 +11,14 @@ public class Post {
     private Date registeredDate;
     private Date modifiedDate;
 
+    public Post() {}
+
+    public Post(String email, String password, String content) {
+        this.email = email;
+        this.password = password;
+        this.content = content;
+    }
+
     public int getId() {
         return id;
     }
@@ -65,5 +73,12 @@ public class Post {
 
     public void setBeautifulDate(String beautifulDate) {
         this.beautifulDate = beautifulDate;
+    }
+
+    @Override
+    public String toString() {
+        return "id : " + id + ", email: " + email + ", password: " + password +
+                ", content: " + content + ", registeredDate: " + registeredDate +
+                ", modifiedDate: " + modifiedDate + ", beautifulDate: " + beautifulDate;
     }
 }
