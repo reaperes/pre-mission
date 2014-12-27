@@ -25,7 +25,6 @@ public class PostsController {
     public String upload(@Valid UploadPost uploadPost, BindingResult bindingResult) {
         if (bindingResult.hasErrors())
             return bindingResult.getModel().toString();
-        System.out.println(uploadPost);
         Post post = uploadPost.toPost();
         post.setRegisteredDate(new Date());
         postService.insertPost(post);
