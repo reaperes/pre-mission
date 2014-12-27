@@ -2,7 +2,6 @@ package com.nhnent.service;
 
 import com.nhnent.Application;
 import com.nhnent.domain.Post;
-import com.nhnent.util.DatetimeUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
