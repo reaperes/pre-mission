@@ -33,7 +33,7 @@ public class DatetimeUtil {
     /**
      * Beautify mysql datetime
      * @param datetime datetime format ex. Wed Dec 24 10:59:26 KST 2014
-     * @return ex. December 24, 10:59:26
+     * @return ex. December 24 10:59:26
      */
     public static String beautify(String datetime) {
         String[] result = datetime.split("\\s");
