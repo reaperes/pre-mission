@@ -1,5 +1,10 @@
+@font-face {
+  font-family: 'FuturaBook';
+  src: url('../fonts/futura-book.ttf') format('truetype');
+}
+
 h1 {
-  font-size: 40px;
+  font-size: 48px;
 }
 
 h2 {
@@ -15,21 +20,31 @@ h4 {
 }
 
 body {
+  font-family: FuturaBook, Helvetica, Arial, sans-serif;
   line-height: normal;
 }
 
-#logoContainer {
-  background-color: #91AA9D;
-  text-align: center;
+#logo-container {
+  display: table;
+  background: url('../images/background.jpg') center top no-repeat;
+  width: 100%;
+  height: 705px;
 }
 
-#logoContainer img {
-  margin: 20px auto;
+#logo-title-container {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+#logo-title {
+  margin-left: 14px;
+  color: #F7F7F7;
 }
 
 #recent-container {
-  background-color: #D1DBBD;
-  width: 180px;
+  background-color: #DABBA8;
+  color: #323232;
+  width: 250px;
   margin: 20px 20px;
   float: left;
 }
@@ -45,7 +60,8 @@ body {
 }
 
 #post-container {
-  margin-left: 200px;
+  margin-left: 270px;
+  margin-right: 200px;
   padding: 20px;
 }
 
@@ -54,8 +70,10 @@ body {
 }
 
 .post {
-  background-color: #FCFFF5;
   margin-bottom: 20px;
+  padding: 5px;
+  border: 1px solid #777777;
+  border-radius: 6px;
 }
 
 .post-meta-container {
@@ -63,10 +81,17 @@ body {
 }
 
 .post-author {
+  color: #7B7B7B;
   float: left;
-  margin-right: 10px;
+  margin-right: 18px;
 }
 
 .post-register-date {
+  color: #AEAEAE;
   font-size: 18px;
+}
+
+.trigger {
+  visibility: hidden;
+  height: 0;
 }

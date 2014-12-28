@@ -1,3 +1,20 @@
+$(document).ready(function ($) {
+  var controller = new ScrollMagic();
+  var $logoContainer = $('#logo-container');
+
+  var scene = new ScrollScene({
+      offset: $logoContainer.height()-60
+    })
+    .setPin("#logo-container")
+    .on("enter", function () {
+      $logoContainer.fadeTo(400, 0.9);
+    })
+    .on("leave", function () {
+      $logoContainer.fadeTo(400, 1);
+    })
+    .addTo(controller);
+});
+
 $(window).load(function () {
   var $form = $("#post-new-form");
   $form.submit(function () {

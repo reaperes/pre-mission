@@ -21,7 +21,7 @@ public class MainController {
     public String hello(Model model) {
         List<Post> posts = postService.getAllPosts();
         List<String> recentSummaries = posts.stream()
-                .map(post -> postService.summarize(post, 20))
+                .map(post -> postService.summarize(post, 26))
                 .collect(Collectors.toCollection(LinkedList::new));
 
         model.addAttribute("posts", posts);
