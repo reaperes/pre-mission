@@ -40,9 +40,9 @@
   <article class="post">
     <div class="post-meta-container">
       <h4 class="post-author">${post.email}</h4>
-      <time class="post-register-date">${post.beautifulDate}</time>
+      <time class="post-register-date"><span>${post.beautifulDate}</span></time>
     </div>
-    <p>${post.content}</p>
+    <p class="post-content">${post.content}</p>
   </article>
   </c:forEach>
 </main>
